@@ -11,7 +11,7 @@ const crearCasillas = async (cantidad, id_tablero) => {
     const id_recurso = Math.floor(Math.random() * recursos.length) + 1;
     console.log(`id recurso ${id_recurso}`);
     try {
-      const response = await fetch('http://localhost:3000/casillas/casilla.create', {
+      const response = await fetch('https://web-pirates-api.onrender.com/casillas/casilla.create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ const crearCasillas = async (cantidad, id_tablero) => {
 
 const crearTablero = async (escenario) => {
   try {
-    const response = await fetch('http://localhost:3000/tableros/tablero.create', {
+    const response = await fetch('https://web-pirates-api.onrender.com/tableros/tablero.create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ const crearPartida = async (numero_jugadores, id_usuario, escenario, tipo_person
 
     let id_partida;
     try {
-      const response = await fetch('http://localhost:3000/partidas/partida.create', {
+      const response = await fetch('https://web-pirates-api.onrender.com/partidas/partida.create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ const crearPartida = async (numero_jugadores, id_usuario, escenario, tipo_person
 
 const eliminarPartida = async (id_partida) => {
   try {
-    const response = await fetch(`http://localhost:3000/partidas/delete/${id_partida}`, {
+    const response = await fetch(`https://web-pirates-api.onrender.com/partidas/delete/${id_partida}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -107,7 +107,7 @@ const eliminarPartida = async (id_partida) => {
 
 const eliminarTablero = async (id_tablero) => {
   try {
-    const response = await fetch(`http://localhost:3000/tableros/delete/${id_tablero}`, {
+    const response = await fetch(`https://web-pirates-api.onrender.com/tableros/delete/${id_tablero}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -120,7 +120,7 @@ const eliminarTablero = async (id_tablero) => {
 
 const eliminarCasillas = async (id_casilla) => {
   try {
-    const response = await fetch(`http://localhost:3000/casillas/delete/${id_casilla}`, {
+    const response = await fetch(`https://web-pirates-api.onrender.com/casillas/delete/${id_casilla}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

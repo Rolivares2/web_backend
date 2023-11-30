@@ -21,7 +21,7 @@ app.use((ctx) => {
   
   Cómo hacer el llamado a la api:
   Ejecutar "yarn dev" en la terminal
-  Abrir https://localhost:3000
+  Abrir https://web-pirates-api.onrender.com
 
   Endpoint: /Usuarios?id={user_id}
   Parámetros:

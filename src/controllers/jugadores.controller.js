@@ -16,7 +16,7 @@ const recursos = [
 const crearJugador = async (id_usuario, id_partida, tipo_personaje, isadmin) => {
   try {
     // const casilla_inicio = Math.floor(Math.random() * 25);
-    const response = await fetch('http://localhost:3000/jugadores/jugador.create', {
+    const response = await fetch('https://web-pirates-api.onrender.com/jugadores/jugador.create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ const crearJugador = async (id_usuario, id_partida, tipo_personaje, isadmin) => 
 
 const eliminarJugador = async (id_jugador) => {
   try {
-    const response = await fetch(`http://localhost:3000/jugadores/delete/${id_jugador}`, {
+    const response = await fetch(`https://web-pirates-api.onrender.com/jugadores/delete/${id_jugador}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
