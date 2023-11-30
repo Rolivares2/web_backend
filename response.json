@@ -1,0 +1,14 @@
+{
+    {
+      success: false,
+      message: "Se deben comprobar las credenciales",
+    };
+     {
+      success: true,
+      message: "Se ha iniciado sesión correctamente",
+    };
+     {
+      success: true,
+      message: "Se ha creado el usuario correctamente",
+    };
+}

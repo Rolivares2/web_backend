@@ -1,0 +1,8 @@
+{
+    "action":1,
+    "body":{
+        "idJugador":1,
+        "casillaInicial": 1,
+        "casillaFinal": 1
+    }
+}
