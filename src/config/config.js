@@ -4,10 +4,12 @@ dotenv.config();
 
 module.exports = {
   development: {
-    username: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
-    host: process.env.DB_HOST,
+    username: web_pirates_db_user,
+    password: aVLDndeUXaZY3eFsjsEz2WzZritLTb3V,
+    database: web_pirates_db,
+    host: dpg-cljtna18mmjc73dcgua0-a,
     dialect: 'postgres',
   }
 };
+
+
