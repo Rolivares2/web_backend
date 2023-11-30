@@ -9,6 +9,6 @@ async function deploy() {
   const { stdout: output2 } = await exec('yarn db:migrate');
   console.log('Migrating database...');
   console.log(output2);
-
+}
 
 deploy();
